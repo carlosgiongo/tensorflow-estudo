@@ -1,0 +1,26 @@
+{
+  "name": "tensorflow-estudo",
+  "version": "1.0.0",
+  "description": "Projeto para iniciar os estudos com tensorflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosgiongo/tensorflow-estudo.git"
+  },
+  "author": "Carlos Giongo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosgiongo/tensorflow-estudo/issues"
+  },
+  "homepage": "https://github.com/carlosgiongo/tensorflow-estudo#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^3.16.0",
+    "bcrypt": "^5.0.1",
+    "node-gyp": "^9.0.0",
+    "yarn": "^1.22.18"
+  }
+}
