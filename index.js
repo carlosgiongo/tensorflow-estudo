@@ -13,8 +13,12 @@ async function predict(valor, model){
     return dado
 }
 
-async function treinar(model, inputs, outputs, shape = [1], epocas = 750, compilacao_confs = {loss: 'meanSquaredError', optimizer: 'sgd'}){
-    model.add(tf.layers.dense({units:1, inputShape: shape}))
+async function treinar(
+model, inputs, outputs, 
+shape_in = [1], shape_out = 1, epocas = 750, 
+compilacao_confs = {loss: 'meanSquaredError', optimizer: 'sgd'}
+) {
+    model.add(tf.layers.dense({units:shape_out, inputShape: shape_in}))
     model.compile(compilacao_confs)
 
     const xs = tf.tensor2d(inputs)  //x coleções de y elementos
